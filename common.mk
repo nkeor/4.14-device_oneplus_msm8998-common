@@ -143,6 +143,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     vendor.qti.hardware.camera.device@1.0
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
@@ -231,6 +235,7 @@ PRODUCT_PACKAGES += \
     init.devstart.sh \
     init.qcom.rc \
     init.qcom.usb.rc \
+    init.target.displaymodes.rc \
     init.radio.sh \
     ueventd.qcom.rc
 
