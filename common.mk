@@ -394,6 +394,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/oneplus
+QCOM_SOONG_NAMESPACE := $(LOCAL_PATH)/qcom-caf
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
