@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.yaap.device.DeviceSettings;
+package com.spark.device.DeviceSettings;
 
 import android.Manifest;
 import android.app.ActivityThread;
@@ -48,9 +48,9 @@ import android.widget.Toast;
 import com.android.internal.os.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
 
-import com.yaap.device.DeviceSettings.Constants;
-import com.yaap.device.DeviceSettings.DeviceSettings;
-import com.yaap.device.DeviceSettings.R;
+import com.spark.device.DeviceSettings.Constants;
+import com.spark.device.DeviceSettings.DeviceSettings;
+import com.spark.device.DeviceSettings.R;
 
 public class KeyHandler implements DeviceKeyHandler {
 
@@ -188,7 +188,7 @@ public class KeyHandler implements DeviceKeyHandler {
     private Context getResContext(Context context) {
         Context resContext;
         try {
-            resContext = context.createPackageContext("com.yaap.device.DeviceSettings",
+            resContext = context.createPackageContext("com.spark.device.DeviceSettings",
                     Context.CONTEXT_IGNORE_SECURITY | Context.CONTEXT_INCLUDE_CODE);
         } catch (NameNotFoundException e) {
             // nothing to do about this, shouldn't ever reach here anyway

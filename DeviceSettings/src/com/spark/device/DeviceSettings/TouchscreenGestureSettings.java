@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.yaap.device.DeviceSettings;
+package com.spark.device.DeviceSettings;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -35,8 +35,8 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
 
-import com.android.internal.yaap.hardware.LineageHardwareManager; // Need FWB support
-import com.android.internal.yaap.hardware.TouchscreenGesture; // Need FWB support
+import com.android.internal.spark.hardware.LineageHardwareManager; // Need FWB support
+import com.android.internal.spark.hardware.TouchscreenGesture; // Need FWB support
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.collapsingtoolbar.R;
