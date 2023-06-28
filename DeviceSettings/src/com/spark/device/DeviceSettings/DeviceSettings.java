@@ -49,9 +49,11 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_VIBSTRENGTH = "vib_strength";
     public static final String KEY_SETTINGS_PREFIX = "device_setting_";
     public static final String KEY_BUTTON_SWAP = "button_swap";
+    public static final String KEY_CHG_VOLTAGE_CHECK = "disableChargerVoltageCheck";
 
     private static final boolean sIsOnePlus5t = android.os.Build.DEVICE.equals("OnePlus5T");
     private TwoStatePreference mButtonSwap;
+    private TwoStatePreference mChgVoltageCheck;
     private TwoStatePreference mHBMModeSwitch;
     private SwitchPreference mFpsInfo;
     private VibratorStrengthPreference mVibratorStrength;
@@ -87,6 +89,11 @@ public class DeviceSettings extends PreferenceFragment
         } else {
             mButtonSwap.setVisible(false);
         }
+
+        mChgVoltageCheck = (TwoStatePreference) findPreference(KEY_CHG_VOLTAGE_CHECK);
+        mChgVoltageCheck.setEnabled(ChgVoltageCheck.isSupported());
+        mChgVoltageCheck.setChecked(ChgVoltageCheck.isCurrentlyEnabled(this.getContext()));
+        mChgVoltageCheck.setOnPreferenceChangeListener(new ChgVoltageCheck());
     }
 
     @Override

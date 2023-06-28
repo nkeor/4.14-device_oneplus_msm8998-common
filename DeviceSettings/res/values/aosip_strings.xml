@@ -99,6 +99,10 @@
     <string name="button_swap_title">Swap buttons</string>
     <string name="button_swap_summary">Swap the order of recents and back buttons</string>
 
+    <string name="charger_dashboard_summary">Charger</string>
+    <string name="disableChargerVoltageCheck_title">Disable the charger voltage check</string>
+    <string name="disableChargerVoltageCheck_summary">WARNING: this may be dangerous, but it may be useful in case a charger is not working properly</string>
+
     <!-- Vibration control -->
     <string name="category_vibrator">Vibrator</string>
     <string name="vib_strength_title_head">System Strength</string>
