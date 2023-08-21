@@ -69,7 +69,7 @@ public class VibratorStrengthPreference extends Preference implements
     }
 
 	public static String getValue(Context context) {
-		return Utils.getFileValue(FILE_LEVEL, "1800");
+		return Utils.getFileValue(FILE_LEVEL, "958");
 	}
 
 	private void setValue(String newValue, boolean withFeedback) {
@@ -87,7 +87,7 @@ public class VibratorStrengthPreference extends Preference implements
             return;
         }
 
-        String storedValue = PreferenceManager.getDefaultSharedPreferences(context).getString(DeviceSettings.KEY_VIBSTRENGTH, "1800");
+        String storedValue = PreferenceManager.getDefaultSharedPreferences(context).getString(DeviceSettings.KEY_VIBSTRENGTH, "958");
         Utils.writeValue(FILE_LEVEL, storedValue);
     }
 
